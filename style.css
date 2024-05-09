@@ -1,0 +1,81 @@
+body{
+    font-weight: bolder;
+}
+.travel_mainDiv img{
+    width:100%;
+    height:300px;
+    }
+    .travel_mainDiv hr{
+    width:100%;
+    }
+    .travel_mainDiv h5{
+    margin-left:20px;
+    font-weight: bolder;
+    color: black;
+    }
+   #video{
+   width: 100%;
+   height: 500px;
+   }
+iframe{
+width: 100%;
+height: 500px;
+ }
+ .movie_head{
+font-size: 20px;
+padding: 6px 22px;
+border-radius: 10px;
+margin-bottom: 15px;
+ }
+ .movie_head i{
+float: right;
+ }
+ .achievements_text span{
+color: orange;
+ }
+h4{
+font-weight: bold;
+}
+#m{
+position:relative;
+top:-9px;
+}
+#a{
+position: relative;
+top:20px;
+}
+#n{
+position: relative;
+top: 90px;
+}
+.new{
+margin-bottom: 20px;
+}
+#contact iframe{
+width: 100%;
+}
+h3{
+    font-size: 10px;
+    text-align: center;
+    }
+    #contactUs i  {
+        position: absolute;
+        right: 840px;
+        }
+        p{
+            font-size: 15px;
+        }
+        h4{
+            font-size: 20px; 
+        }
+        img{
+            object-fit: contain;
+            position: relative;
+            
+            padding-bottom: 5%;
+            right: 10%;
+        }
+        button{
+            font-size: 20;
+        }
+        

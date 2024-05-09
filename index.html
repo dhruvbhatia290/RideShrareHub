@@ -1,0 +1,264 @@
+<html>
+  <!DOCTYPE html>
+<head>
+  <title>School Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <script src=”https://www.google-analytics.com/analytics.js”></script>
+<script src="dhruv.js"></script>
+  
+  <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "YOUR_API_KEY",
+      v: "weekly",
+    });
+  </script>
+
+  <script src="https://unpkg.com/@googlemaps/js-api-loader@1.x/dist/index.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <!--
+Navigation bar code here
+-->
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+   
+
+  </div>
+ 
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li> <a href="#achievments">Home</a></li>
+      <li> <a href="#campus_life">Advantages</a></li>
+      <li> <a href="#new">Why to CarPool</a></li>
+      <li> <a href="#contactUs">Contact Us</a></li>
+    </ul>
+  </div>
+
+</nav>
+<div id="achievments">
+<img src="car pool.jpg"width=1000 height="500">
+<button>Start Now</button>
+</div>
+
+
+
+<div class="container">
+  <h2 class="page-header" id="campus_life"></h2> 
+ </div>
+ <center>
+   <div class="travel_mainDiv"> 
+    <section id="offer-ride">
+      <h2>Offer a Ride</h2>
+      <form id="ride-form">
+          <input type="text" id="origin" placeholder="Origin">
+          <input type="text" id="destination" placeholder="Destination">
+          <input type="datetime-local" id="departure-time">
+          <input type="number" id="seats-available" placeholder="Seats Available">
+          <button type="submit">Offer Ride</button>
+      </form>
+  </section>
+
+  <section id="find-ride">
+      <h2>Find a Ride</h2>
+      
+      <form id="find-ride-form">
+          <input type="text" id="search-origin" placeholder="Origin">
+          <input type="text" id="search-destination" placeholder="Destination">
+          <input type="datetime-local" id="search-departure-time">
+          <button type="submit">Find Ride</button>
+      </form>
+      <div id="search-results"></div>
+  </section>
+
+</div>
+ 
+ 
+</center>
+<br> <br>
+<br>
+ <br>
+ <center>
+  <div class="travel_mainDiv"> 
+    
+</div>
+</center>
+
+<h2  style="font-weight: bold;color: black;" class="page-header">How to use?</h2>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#comp1" >
+ Destination Selection
+<i class="fa fa-sort-desc"></i>
+</div>
+
+<div id="comp1" class="collapse">
+
+<h5 class="text-success text-capitalize">Number Sharing
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span> 
+</h5>
+<p>Can contact to the pooler by selecting destination</p>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#comp2" >
+  S
+ <i class="fa fa-sort-desc"></i>
+ </div>
+ 
+ <div id="comp2" class="collapse">
+ 
+ <img src="LD.jpg" alt="" class="img-responsive img-thumbnail">
+ <h5 class="text-success text-capitalize">Won fist prize in Drawing Competion.
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span> 
+ </h5>
+ <p>Drawing competion is a competion in our school in every class.</p>
+ </div>
+ </div>
+ </div>
+
+ <br>
+<br>
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#comp3" >
+  How to contact?
+ <i class="fa fa-sort-desc"></i>
+ </div>
+ 
+ <div id="comp3" class="collapse">
+ 
+ <h5 class="text-success text-capitalize">Select your destination.
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span>
+ <span class="glyphicon glyphicon-star"></span> 
+ </h5>
+ <p>Chess is a competion in our school in 7th and 8th class.</p>
+ </div>
+ </div>
+ </div>
+<br>
+<br>
+
+<h2 class="page-header" id="new"></h2>
+
+<ul class="list-group">
+<li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 enviroment_li">
+   <h4>Farewell</h4>
+   <img src="sap.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" alt="">
+   <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Like in every school Farewell is celebrated for 12th students who have became graduated with lots of fun and frolic. We say bye to our seniors.</p>
+  </li>
+</ul>
+
+<li class="list-group-item-warning list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 enviroment_li">
+<h4 id="m">Providing information to parents about School and child</h4>
+<img src="da2.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" alt="">
+<p id="a" class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">What happens if your child does not know about his exam and homework. When there are online classes so for giving them all The informations our School has created groups for our school and every subject.</p>
+
+</li>
+
+
+<section id="contactUs"> 
+
+
+
+  <style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+
+
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization,places&callback=initMap" async defer></script>
+<script>
+    let map, marker;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 0, lng: 0 },
+            zoom: 15
+        });
+        marker = new google.maps.Marker({
+            position: { lat: 0, lng: 0 },
+            map: map,
+            title: 'My Location'
+        });
+    }
+
+    function sendLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                const newLocation = new google.maps.LatLng(lat, lng);
+                marker.setPosition(newLocation);
+                map.setCenter(newLocation);
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+</script>
+<button onclick="sendLocation()">Send My Location</button>
+  
+
+
+
+  <img id="n" src="prince.jpg" alt="">
+  <div class="contact_1">
+    <a href="mailto:daksh.bhatia01@outlook.com"?subject=Hi>
+      <i class="fa fa-envelope"> </i>&nbsp;&nbsp;<h3>mygmailid@gmail.com</h3>
+    </a>
+    <br>
+    <br>
+    <a href="https://instagram.com/cute_dhruv2909?utm_medium=copy_link"?subject=Hi>
+      <i class="fa fa-instagram"> </i>&nbsp;&nbsp;<h3>myimstagramid</h3>
+    </a>
+  </section>
+
+
+
+
+
+
+
+
+  
+        
+    
+</body>
+</html>
